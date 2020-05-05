@@ -11,11 +11,15 @@ git config --global user.email "davidkypuros"
 git config --global user.email
 ```
 
-[Create a GitHub Repo from APIs (e.g CLI)](https://developer.github.com/v3/repos/#create)
-Your API Token can be found on the GitHub site, click Account Settings, look for Administrative Information and API Token (32 character long string)
+[Create a GitHub Repo from APIs
 
+Example command:
 ```
-#curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+```
+
+My Specific command:
+```
 curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'
 #<enter password>
 
@@ -32,7 +36,7 @@ git log
 git commit -s  #add message :wq!
 git log
 git status #not staged
-
+git push https://github.com/dkypuros/favoritecommands.git
 
 
 ...cli output...
