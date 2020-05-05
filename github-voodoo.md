@@ -175,6 +175,7 @@ ssh-keygen -t rsa -C "davidkypuros@gmail.com"
 
 cd ~/.ssh
 ssh-keygen -t rsa -C "davidkypuros@gmail.com"
+```
 <details><summary>CLI output</summary>
 <p>
 Generating public/private rsa key pair.
