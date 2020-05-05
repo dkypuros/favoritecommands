@@ -1,13 +1,15 @@
+
+Individual File
 ```
-
-sudo dnf install -y audacious
-
 $ youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=gjQBsCqtfcs
 
 $ youtube-dl -i -f mp4 --yes-playlist 'https://www.youtube.com/watch?v=7Vy8970q0Xc&list=PLwJ2VKmefmxpUJEGB1ff6yUZ5Zd7Gegn2'
 
+```
+
 Alternatively, you can just use the playlist ID:
 
+```
 $ youtube-dl -x --audio-format mp3 PLwJ2VKmefmxpUJEGB1ff6yUZ5Zd7Gegn2
 
 //Playlist extractor
