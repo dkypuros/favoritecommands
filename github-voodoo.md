@@ -1,5 +1,8 @@
 Git / GitHub Vudoo
 
+<details><summary>Setting Your Global Variable Info</summary>
+<p>
+
 ```
 --system, --global, --local
 ```
@@ -10,6 +13,8 @@ git config --global user.name
 git config --global user.email "davidkypuros"
 git config --global user.email
 ```
+</p>
+</details>
 
 [Create a GitHub Repo from APIs
 
