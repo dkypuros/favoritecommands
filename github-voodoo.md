@@ -48,6 +48,7 @@ warning: You appear to have cloned an empty repository.
 
 
 ...cli output of command...
+
 ======curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'====
 
 ```
