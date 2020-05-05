@@ -166,9 +166,8 @@ git push https://github.com/dkypuros/favoritecommands.git
 </details>
 
 
-#### SSH Key Authentication
->Don't keep typing your password when "git push"
-Instead use SSH Keys pairs
+<details><summary>SSH Key Authentication</summary>
+<p>
 
 ```
 cd ~/.ssh
@@ -248,3 +247,7 @@ RSA key fingerprint is SHA256:XXXXX.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com,140.82.112.4' (RSA) to the list of known hosts.
 ```
+
+
+</p>
+</details>
