@@ -46,17 +46,16 @@ warning: You appear to have cloned an empty repository.
 
 ```
 
-<details><summary>CLICK ME</summary>
+<details><summary>CLI output</summary>
 <p>
 
-#### yes, even hidden code blocks!
+#### Copy/Paste CLI
 
-```python
+```
 ...cli output of command...
 
 ======curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'====
 
-```
 {
   "id": 261494969,
   "node_id": "MDEwOlJlcG9zaXRvcnkyNjE0OTQ5Njk=",
