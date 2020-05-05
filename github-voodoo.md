@@ -46,10 +46,8 @@ warning: You appear to have cloned an empty repository.
 
 ```
 
-<details><summary>CLI output</summary>
+<details><summary>CLI output: $curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'</summary>
 <p>
-
-#### $curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'
 
 ```
 ...cli output of command...
