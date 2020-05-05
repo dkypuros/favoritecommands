@@ -1,0 +1,146 @@
+Git / GitHub Vudoo
+
+```
+--system, --global, --local
+```
+```
+git config --global user.name "username"
+git config --global user.name
+
+git config --global user.email "davidkypuros"
+git config --global user.email
+```
+
+[Create a GitHub Repo from APIs (e.g CLI)](https://developer.github.com/v3/repos/#create)
+Your API Token can be found on the GitHub site, click Account Settings, look for Administrative Information and API Token (32 character long string)
+
+```
+#curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
+curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'
+#<enter password>
+
+#Look in the output
+  "git_url": "git://github.com/dkypuros/favoritecommands.git",
+
+pwd
+/home/davidkypuros
+git clone git://github.com/dkypuros/favoritecommands.git
+
+...cli output...
+Cloning into 'favoritecommands'...
+warning: You appear to have cloned an empty repository.
+
+
+```
+
+
+...cli output...
+
+```
+{
+  "id": 261494969,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyNjE0OTQ5Njk=",
+  "name": "favoritecommands",
+  "full_name": "dkypuros/favoritecommands",
+  "private": false,
+  "owner": {
+    "login": "dkypuros",
+    "id": 363856,
+    "node_id": "MDQ6VXNlcjM2Mzg1Ng==",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/363856?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dkypuros",
+    "html_url": "https://github.com/dkypuros",
+    "followers_url": "https://api.github.com/users/dkypuros/followers",
+    "following_url": "https://api.github.com/users/dkypuros/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dkypuros/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dkypuros/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dkypuros/subscriptions",
+    "organizations_url": "https://api.github.com/users/dkypuros/orgs",
+    "repos_url": "https://api.github.com/users/dkypuros/repos",
+    "events_url": "https://api.github.com/users/dkypuros/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dkypuros/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "html_url": "https://github.com/dkypuros/favoritecommands",
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/dkypuros/favoritecommands",
+  "forks_url": "https://api.github.com/repos/dkypuros/favoritecommands/forks",
+  "keys_url": "https://api.github.com/repos/dkypuros/favoritecommands/keys{/key_id}",
+  "collaborators_url": "https://api.github.com/repos/dkypuros/favoritecommands/collaborators{/collaborator}",
+  "teams_url": "https://api.github.com/repos/dkypuros/favoritecommands/teams",
+  "hooks_url": "https://api.github.com/repos/dkypuros/favoritecommands/hooks",
+  "issue_events_url": "https://api.github.com/repos/dkypuros/favoritecommands/issues/events{/number}",
+  "events_url": "https://api.github.com/repos/dkypuros/favoritecommands/events",
+  "assignees_url": "https://api.github.com/repos/dkypuros/favoritecommands/assignees{/user}",
+  "branches_url": "https://api.github.com/repos/dkypuros/favoritecommands/branches{/branch}",
+  "tags_url": "https://api.github.com/repos/dkypuros/favoritecommands/tags",
+  "blobs_url": "https://api.github.com/repos/dkypuros/favoritecommands/git/blobs{/sha}",
+  "git_tags_url": "https://api.github.com/repos/dkypuros/favoritecommands/git/tags{/sha}",
+  "git_refs_url": "https://api.github.com/repos/dkypuros/favoritecommands/git/refs{/sha}",
+  "trees_url": "https://api.github.com/repos/dkypuros/favoritecommands/git/trees{/sha}",
+  "statuses_url": "https://api.github.com/repos/dkypuros/favoritecommands/statuses/{sha}",
+  "languages_url": "https://api.github.com/repos/dkypuros/favoritecommands/languages",
+  "stargazers_url": "https://api.github.com/repos/dkypuros/favoritecommands/stargazers",
+  "contributors_url": "https://api.github.com/repos/dkypuros/favoritecommands/contributors",
+  "subscribers_url": "https://api.github.com/repos/dkypuros/favoritecommands/subscribers",
+  "subscription_url": "https://api.github.com/repos/dkypuros/favoritecommands/subscription",
+  "commits_url": "https://api.github.com/repos/dkypuros/favoritecommands/commits{/sha}",
+  "git_commits_url": "https://api.github.com/repos/dkypuros/favoritecommands/git/commits{/sha}",
+  "comments_url": "https://api.github.com/repos/dkypuros/favoritecommands/comments{/number}",
+  "issue_comment_url": "https://api.github.com/repos/dkypuros/favoritecommands/issues/comments{/number}",
+  "contents_url": "https://api.github.com/repos/dkypuros/favoritecommands/contents/{+path}",
+  "compare_url": "https://api.github.com/repos/dkypuros/favoritecommands/compare/{base}...{head}",
+  "merges_url": "https://api.github.com/repos/dkypuros/favoritecommands/merges",
+  "archive_url": "https://api.github.com/repos/dkypuros/favoritecommands/{archive_format}{/ref}",
+  "downloads_url": "https://api.github.com/repos/dkypuros/favoritecommands/downloads",
+  "issues_url": "https://api.github.com/repos/dkypuros/favoritecommands/issues{/number}",
+  "pulls_url": "https://api.github.com/repos/dkypuros/favoritecommands/pulls{/number}",
+  "milestones_url": "https://api.github.com/repos/dkypuros/favoritecommands/milestones{/number}",
+  "notifications_url": "https://api.github.com/repos/dkypuros/favoritecommands/notifications{?since,all,participating}",
+  "labels_url": "https://api.github.com/repos/dkypuros/favoritecommands/labels{/name}",
+  "releases_url": "https://api.github.com/repos/dkypuros/favoritecommands/releases{/id}",
+  "deployments_url": "https://api.github.com/repos/dkypuros/favoritecommands/deployments",
+  "created_at": "2020-05-05T14:28:51Z",
+  "updated_at": "2020-05-05T14:28:51Z",
+  "pushed_at": "2020-05-05T14:28:52Z",
+  "git_url": "git://github.com/dkypuros/favoritecommands.git",
+  "ssh_url": "git@github.com:dkypuros/favoritecommands.git",
+  "clone_url": "https://github.com/dkypuros/favoritecommands.git",
+  "svn_url": "https://github.com/dkypuros/favoritecommands",
+  "homepage": null,
+  "size": 0,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": null,
+  "has_issues": true,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "forks_count": 0,
+  "mirror_url": null,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": null,
+  "forks": 0,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "permissions": {
+    "admin": true,
+    "push": true,
+    "pull": true
+  },
+  "allow_squash_merge": true,
+  "allow_merge_commit": true,
+  "allow_rebase_merge": true,
+  "delete_branch_on_merge": false,
+  "network_count": 0,
+  "subscribers_count": 1
+}
+
+```
