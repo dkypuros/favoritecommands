@@ -187,8 +187,12 @@ SHA256:XXXXX XXXXXXXXXXxs@gmail.com
 The key's randomart image is: XXXXXX
 </details></p>
 
-[davidkypuros@localhost .ssh]$ ls
+#### Key's
+id_rsa is your private key
+id_rsa.pub is public key.
+```$ls
 id_rsa  id_rsa.pub  known_hosts
+```
 
 
 SSH way to connect
