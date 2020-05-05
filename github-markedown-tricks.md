@@ -1,5 +1,14 @@
 Markdown Tips and Tricks:
 
+
+Hiding Code:
+
+<details><summary>Click Here</summary>
+<p>
+See this.
+</p>
+</details>
+
 ```
 <details><summary></summary>
 <p>
@@ -7,13 +16,7 @@ Markdown Tips and Tricks:
 </p>
 </details>
 ```
-```
-<details><summary>Click Here</summary>
-<p>
-See this.
-</p>
-</details>
-```
+
 
 
 How do you upload images to : githubusercontent?
