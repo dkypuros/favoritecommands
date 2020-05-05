@@ -46,7 +46,12 @@ warning: You appear to have cloned an empty repository.
 
 ```
 
+<details><summary>CLICK ME</summary>
+<p>
 
+#### yes, even hidden code blocks!
+
+```python
 ...cli output of command...
 
 ======curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'====
@@ -159,8 +164,8 @@ warning: You appear to have cloned an empty repository.
 }
 
 ```
-
-
+</p>
+</details>
 
 
 use SSH Keys to "git push"
