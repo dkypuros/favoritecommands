@@ -49,13 +49,6 @@ git push https://github.com/dkypuros/favoritecommands.git
 </details>
 
 
-...cli output...
-Cloning into 'favoritecommands'...
-warning: You appear to have cloned an empty repository.
-
-
-```
-
 <details><summary>CLI output: $curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'</summary>
 <p>
 
