@@ -165,7 +165,8 @@ warning: You appear to have cloned an empty repository.
 </details>
 
 
-> Don't keep typing your password when "git push" 
+#### SSH Key Authentication
+>Don't keep typing your password when "git push" 
 Instead use SSH Keys pairs
 
 ```
