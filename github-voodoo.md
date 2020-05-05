@@ -16,7 +16,9 @@ git config --global user.email
 </p>
 </details>
 
-[Create a GitHub Repo from APIs
+
+<details><summary>[Create a GitHub Repo from APIs</summary>
+<p>
 
 Example command:
 ```
@@ -42,6 +44,9 @@ git commit -s  #add message :wq!
 git log
 git status #not staged
 git push https://github.com/dkypuros/favoritecommands.git
+```
+</p>
+</details>
 
 
 ...cli output...
