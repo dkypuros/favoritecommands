@@ -237,7 +237,7 @@ git push --set-upstream origin master
 
 ```
 The authenticity of host 'github.com (140.82.112.4)' can't be established.
-RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+RSA key fingerprint is SHA256:XXXXX.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com,140.82.112.4' (RSA) to the list of known hosts.
 ```
