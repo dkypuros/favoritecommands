@@ -167,7 +167,7 @@ git push https://github.com/dkypuros/favoritecommands.git
 </details>
 
 
-<details><summary>SSH Key Authentication</summary>
+<details><summary>Use SSH Keys instead of password to authenticate</summary>
 <p>
 
 ```
