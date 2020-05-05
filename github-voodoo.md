@@ -17,7 +17,7 @@ git config --global user.email
 </details>
 
 
-<details><summary>[Create a GitHub Repo from APIs</summary>
+<details><summary>Create a GitHub Repo from APIs</summary>
 <p>
 
 Example command:
@@ -49,7 +49,7 @@ git push https://github.com/dkypuros/favoritecommands.git
 </details>
 
 
-<details><summary>CLI output: $curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'</summary>
+<details><summary>CLI output from creating a GitHub Repo from APIs </summary>
 <p>
 
 ```
