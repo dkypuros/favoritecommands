@@ -176,7 +176,7 @@ ssh-keygen -t rsa -C "davidkypuros@gmail.com"
 cd ~/.ssh
 ssh-keygen -t rsa -C "davidkypuros@gmail.com"
 ```
-<details><summary>CLI output</summary>
+<details><summary>CLI output: $ssh-keygen -t rsa -C "davidkypuros@gmail.com"</summary>
 <p>
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/davidkypuros/.ssh/id_rsa):
