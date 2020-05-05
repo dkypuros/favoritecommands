@@ -49,12 +49,10 @@ warning: You appear to have cloned an empty repository.
 <details><summary>CLI output</summary>
 <p>
 
-#### Copy/Paste CLI
+#### $curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'
 
 ```
 ...cli output of command...
-
-======curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'====
 
 {
   "id": 261494969,
