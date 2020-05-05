@@ -45,8 +45,6 @@ git log
 git status #not staged
 git push https://github.com/dkypuros/favoritecommands.git
 ```
-</p>
-</details>
 
 
 <details><summary>CLI output from creating a GitHub Repo from APIs </summary>
@@ -162,6 +160,9 @@ git push https://github.com/dkypuros/favoritecommands.git
 }
 
 ```
+</p>
+</details>
+
 </p>
 </details>
 
