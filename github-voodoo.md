@@ -166,20 +166,17 @@ warning: You appear to have cloned an empty repository.
 
 
 #### SSH Key Authentication
->Don't keep typing your password when "git push" 
+>Don't keep typing your password when "git push"
 Instead use SSH Keys pairs
 
 ```
 cd ~/.ssh
 ssh-keygen -t rsa -C "davidkypuros@gmail.com"
 
-```
-
-
-[davidkypuros@localhost favoritecommands]$ cd ~/.ssh
-[davidkypuros@localhost .ssh]$ ls
-known_hosts
-[davidkypuros@localhost .ssh]$ ssh-keygen -t rsa -C "davidkypuros@gmail.com"
+cd ~/.ssh
+ssh-keygen -t rsa -C "davidkypuros@gmail.com"
+<details><summary>CLI output</summary>
+<p>
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/davidkypuros/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase): XXXXXX
@@ -189,7 +186,7 @@ Your public key has been saved in /home/davidkypuros/.ssh/id_rsa.pub.
 The key fingerprint is:
 SHA256:XXXXX XXXXXXXXXXxs@gmail.com
 The key's randomart image is: XXXXXX
-
+</details></p>
 
 [davidkypuros@localhost .ssh]$ ls
 id_rsa  id_rsa.pub  known_hosts
