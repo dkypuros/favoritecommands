@@ -26,6 +26,15 @@ pwd
 /home/davidkypuros
 git clone git://github.com/dkypuros/favoritecommands.git
 
+git add .
+git status
+git log
+git commit -s  #add message :wq!
+git log
+git status #not staged
+
+
+
 ...cli output...
 Cloning into 'favoritecommands'...
 warning: You appear to have cloned an empty repository.
@@ -34,7 +43,8 @@ warning: You appear to have cloned an empty repository.
 ```
 
 
-...cli output...
+...cli output of command...
+======curl -u 'davidkypuros@gmail.com' https://api.github.com/user/repos -d '{"name":"favoritecommands"}'====
 
 ```
 {
