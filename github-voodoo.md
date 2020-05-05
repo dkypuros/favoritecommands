@@ -165,7 +165,8 @@ warning: You appear to have cloned an empty repository.
 </details>
 
 
-use SSH Keys to "git push"
+> Don't keep typing your password when "git push" 
+Instead use SSH Keys pairs
 
 ```
 cd ~/.ssh
