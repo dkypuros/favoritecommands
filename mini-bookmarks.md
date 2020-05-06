@@ -14,3 +14,7 @@
 
 
 * [GitHub](https://github.com/)
+
+## Currently Exploring
+
+* [Creating an Action for the Google Assistant from scratch](https://www.youtube.com/watch?v=plr65MD-FBY&t=1511s)
