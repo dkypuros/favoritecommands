@@ -1,7 +1,7 @@
 
-#Mini Bookmarks
+# Mini Bookmarks
 
-##Cloud
+## Cloud
 
 * [AWS Portal](https://aws.amazon.com/)
 
@@ -10,7 +10,7 @@
 * [Netlify - Learning Hugo / Docsy](https://www.netlify.com/)
 
 
-##Daily Drivers
+## Daily Drivers
 
 
 * [GitHub](https://github.com/)
