@@ -1,17 +1,16 @@
 
-Mini Bookmarks
+#Mini Bookmarks
 
-Cloud
-```
-[AWS Portal](https://aws.amazon.com/)
+##Cloud
 
-[Azure Portal](https://azure.microsoft.com/en-us/)
+* [AWS Portal](https://aws.amazon.com/)
 
-[Netlify - Learning Hugo / Docsy](https://www.netlify.com/)
-```
+* [Azure Portal](https://azure.microsoft.com/en-us/)
 
-Daily Drivers
+* [Netlify - Learning Hugo / Docsy](https://www.netlify.com/)
 
-```
-[GitHub](https://github.com/)
-```
+
+##Daily Drivers
+
+
+* [GitHub](https://github.com/)
