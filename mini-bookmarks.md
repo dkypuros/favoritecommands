@@ -10,7 +10,7 @@
 * [Netlify - Learning Hugo / Docsy](https://www.netlify.com/)
 
 
-## Daily Drivers
+## Daily Websites
 
 
 * [GitHub](https://github.com/)
