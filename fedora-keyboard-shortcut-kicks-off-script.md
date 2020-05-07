@@ -37,6 +37,7 @@ source ~/.bashrc
 
 alias
 ```
-alias gitpush='( cd "favoritecommands" && ./up.sh )'
+alias gitpush='( cd "/home/davidkypuros/favoritecommands" && ./up.sh )'
 
+( cd "/home/davidkypuros/favoritecommands" && ./up.sh )'
 ```
