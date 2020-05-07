@@ -7,9 +7,8 @@
 * Ruby on Rails: JavaScript - Ruby - SQLite - Rails.
 
 
-[w3schools list](https://www.w3schools.com/whatis/whatis_fullstack.asp)
-
 ## Client Software (Front End)
+[w3schools list](https://www.w3schools.com/whatis/whatis_fullstack.asp)
 
 * HTML
 * CSS
@@ -33,7 +32,9 @@
 * Grunt
 * Gulp
 
-Server Software - (Back End)
+## Server Software - (Back End)
+[w3schools list](https://www.w3schools.com/whatis/whatis_fullstack.asp)
+
 * PHP
 * ASP
 * C++
