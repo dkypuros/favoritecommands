@@ -1,4 +1,5 @@
 
+## Stacks
 * LAMP stack: JavaScript - Linux - Apache - MySQL - PHP.
 * LEMP stack: JavaScript - Linux - Nginx - MySQL - PHP.
 * MEAN stack: JavaScript - MongoDB - Express - AngularJS - Node.js.
@@ -8,7 +9,7 @@
 
 [w3schools list](https://www.w3schools.com/whatis/whatis_fullstack.asp)
 
-Client Software (Front End)
+## Client Software (Front End)
 
 * HTML
 * CSS
