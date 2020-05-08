@@ -190,12 +190,46 @@ Try a few kubectl commands.
 
 [Here are some sample app Docs](https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/)
 
+#Deployment yaml
+[kubectl apply -f https://k8s.io/examples/service/access/hello-application.yaml](https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/#creating-a-service-for-an-application-running-in-two-pods)
+
+...cli ouput...
+deployment.apps/hello-world created
+
+#deployments
+kubectl get deployments hello-world
+kubectl describe deployments hello-world
+
+#Service
+kubectl expose deployment hello-world --type=NodePort --name=example-service
+...cli output...
+service/example-service exposed
+kubectl describe services example-service
+
+...cli output...
+NodePort:                 <unset>  30517/TCP
+
+kubectl get pods --selector="run=load-balancer-example" --output=wide
+...cli output...
+hello-world-86d6c6f84d-kl6kj   1/1     Running   0          47m   172.17.0.7   minikube   <none>           <none>
+
+
+kubectl cluster-info
+...cli output...
+Kubernetes master is running at https://192.168.39.88:8443
+KubeDNS is running at https://192.168.39.88:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
 ```
 
 
+Note:
+
+[If you are using Google Compute Engine instances, you can use the gcloud compute instances list command to see the public addresses of your nodes](https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/#creating-a-service-for-an-application-running-in-two-pods)
+
+Isn't this 3rd party stuff.
 
 
-
+curl http://172.17.0.7:30517
 
 
 
