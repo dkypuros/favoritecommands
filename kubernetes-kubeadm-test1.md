@@ -98,16 +98,38 @@ Verify that the "libvirtd" daemon is running.
 systemctl enable libvirtd
 systemctl start libvirtd
 
-#[troubleshooting](https://askubuntu.com/questions/345218/virt-manager-cant-connect-to-libvirt)
+#[TROUBLESHOOTING](https://askubuntu.com/questions/345218/virt-manager-cant-connect-to-libvirt)
 ps ax | grep libvirt
 ls -l /var/run/libvirt/libvirt-sock
 
+minikube --help
+minkube version #minikube version: v1.9.2
 virt-host-validate
+sudo virsh net-list --all
+minikube start -v=8 --alsologtostderr --vm-driver=kvm2
+libvirtd --version
 
-QEMU: Checking if device /dev/kvm exists : FAIL (Check that the 'kvm-intel' or 'kvm-amd' modules are loaded & the BIOS has enabled virtualization)
+MESSAGE: QEMU: Checking if device /dev/kvm exists : FAIL (Check that the 'kvm-intel' or 'kvm-amd' modules are loaded & the BIOS has enabled virtualization)
 
+Forgot to add user to "libvirt" and "kvm" see below:
+$ sudo adduser `id -un` libvirt
+The user `dkypuros' is already a member of `libvirt'.
+$ sudo adduser `id -un` kvm
+Adding user `dkypuros' to group `kvm' ...
+Adding user dkypuros to group kvm
+Done.
+
+Still ERROR: KVM2_NO_DOMAIN
+
+Trying this
+minikube delete
 
 ```
+
+
+
+
+
 
 Install Minikube using a package
 
@@ -132,7 +154,7 @@ systemctl status libvirtd #Look for version.
 # Targeting = kvm2
 
 cd ~/
-minikube start --driver=kvm2 #permission error
+minikube start --driver=kvm2                  #permission error
 
 
 ```
@@ -166,6 +188,7 @@ minikube dashboard
 Try a few kubectl commands.
 ```
 
+[Here are some sample app Docs](https://kubernetes.io/docs/tasks/access-application-cluster/service-access-application-cluster/)
 
 ```
 
