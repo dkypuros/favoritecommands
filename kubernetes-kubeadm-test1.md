@@ -91,6 +91,22 @@ The user `MYNAMEHERE' is already a member of `libvirt'.
 virsh list --all
 #bonus GUI
 sudo apt-get install virt-manager
+#Open the "Virtualization Manager"  - look for errors.
+
+#Error
+Verify that the "libvirtd" daemon is running.
+systemctl enable libvirtd
+systemctl start libvirtd
+
+#[troubleshooting](https://askubuntu.com/questions/345218/virt-manager-cant-connect-to-libvirt)
+ps ax | grep libvirt
+ls -l /var/run/libvirt/libvirt-sock
+
+virt-host-validate
+
+QEMU: Checking if device /dev/kvm exists : FAIL (Check that the 'kvm-intel' or 'kvm-amd' modules are loaded & the BIOS has enabled virtualization)
+
+
 ```
 
 Install Minikube using a package
@@ -115,7 +131,9 @@ systemctl status libvirtd #Look for version.
 #Example: minikube start --driver=<driver_name>
 # Targeting = kvm2
 
-minikube start --driver=kvm2
+cd ~/
+minikube start --driver=kvm2 #permission error
+
 
 ```
 
