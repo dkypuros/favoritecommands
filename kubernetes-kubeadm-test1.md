@@ -8,8 +8,6 @@ first the tools - [...tools/install-kubectl/](https://kubernetes.io/docs/tasks/t
 ## Install kubectl binary with curl on Linux
 Option 1.
 ```
-grep -E --color 'vmx|svm' /proc/cpuinfo
-
 cd ~/
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
@@ -75,16 +73,83 @@ vim ~/.bashrc
 
 
 
+# Second install minikube
+KVM note, but no KVM test instructions.
+```
+grep -E --color 'vmx|svm' /proc/cpuinfo
+```
+
+[Found this KVM Cosmic (18.10) Test](https://help.ubuntu.com/community/KVM/Installation)
+[Test system is Bionic (18.04 LTS)]
+```
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+whoami
+systemctl status libvirtd
+sudo adduser `id -un` libvirt
+The user `MYNAMEHERE' is already a member of `libvirt'.
+#test
+virsh list --all
+#bonus GUI
+sudo apt-get install virt-manager
+```
+
+Install Minikube using a package
+
+```
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
+  && chmod +x minikube
+
+sudo mkdir -p /usr/local/bin/
+sudo install minikube /usr/local/bin/
+```
 
 
+# Third Confirm Installation of both a hypervisor and Minikube
+
+```
+# Specifying the VM driver
+[KVM](https://minikube.sigs.k8s.io/docs/drivers/kvm2/) - for libvirt v1.3.1 or higher
+systemctl status libvirtd #Look for version.
+#version 2.79
+
+#Example: minikube start --driver=<driver_name>
+# Targeting = kvm2
+
+minikube start --driver=kvm2
+
+```
+
+# Next - Minikube commands - Configuring Kubernetes
+
+```
+minikube start --driver=kvm2 --extra-config
+
+#Examples:
+#change the MaxPods setting to 5 on the Kubelet
+minikube start --driver=kvm2 --extra-config=kubelet.MaxPods=5
+
+#set the AuthorizationMode on the apiserver to RBAC
+minikube start --driver=kvm2 --extra-config=apiserver.authorization-mode=RBAC
+
+minikube stop
+
+minikube delete
+
+#minikube automatically sets context for kubectl, you reset it.
+kubectl config use-context minikube
+
+#dashboard
+minikube dashboard
+
+#docs
+[Docs](Documentation: https://minikube.sigs.k8s.io/docs/reference/drivers/kvm2/)
+```
+
+Try a few kubectl commands.
+```
 
 
-
-
-
-
-
-
+```
 
 
 
