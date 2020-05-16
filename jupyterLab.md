@@ -46,3 +46,17 @@ jupyter notebook
 
 
 ```
+
+
+The local site.
+[http://localhost:8888/tree#running](http://localhost:8888/tree#running)
+
+```
+Currently running Jupyter processes
+
+terminals => There are no terminals running.
+
+notebooks => There are no notebooks running
+
+New > Python3 > 
+```
