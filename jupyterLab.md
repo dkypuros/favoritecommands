@@ -58,5 +58,17 @@ terminals => There are no terminals running.
 
 notebooks => There are no notebooks running
 
-New > Python3 > 
+New > Python3 >
+
+tup1 = 1,2,3,4
+
+#select 'run' or 'shift enter'
+
+tup1
+
+type(tup1)
+
+tup1 = (3, 4, 5, 6, 7, 8, 9)
+
+# Tuples are immutable
 ```
