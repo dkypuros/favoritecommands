@@ -9,3 +9,7 @@ URL's I'm working through
 * [Flask + Kubeless Tutorial](https://medium.com/@peiruwang/serverless-build-a-serverless-simple-flask-application-with-kubeless-on-top-of-kubernetes-95c6682c3750)
 
 * [Cool OpenShift Everywhere Demo](https://www.pscp.tv/w/1ynJOppLNeWxR?t=1m18s)
+
+* https://www.youtube.com/watch?v=702lkQbZx50
+
+* https://cwienczek.com/2018/05/jupyter-on-kubernetes-the-easy-way/
